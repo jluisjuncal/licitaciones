@@ -75,8 +75,8 @@ async function extractText(row, selector) {
 
 async function extractImporte(row) {
   const importeText = await extractText(row, '.tdImporte');
-  const numericValue = importeText.replace(/[^\d,]/g, '').replace(',', '.');
-  return numericValue ? parseFloat(numericValue) : 0;
+ // const numericValue = importeText.replace(/[^\d,]/g, '').replace(',', '.');
+ // return numericValue ? parseFloat(numericValue) : 0;
 }
 
 async function extractFecha(row) {
